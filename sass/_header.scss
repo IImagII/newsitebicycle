@@ -1,0 +1,28 @@
+.header {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__logo {
+   }
+
+   &__menu {
+   }
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.menu {
+   &__list {
+      display: flex;
+      gap: 50px;
+   }
+
+   &__item {
+   }
+
+   &__link {
+   }
+}
