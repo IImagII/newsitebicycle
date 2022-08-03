@@ -1,38 +1,51 @@
-const images = document.querySelectorAll('.slider .slider-line img')
-const sliderLine = document.querySelector('.slider .slider-line')
-let count = 0
-let width
+//Слайдер
+let slideIndex = 1,
+   sliderItem = document.querySelectorAll('.slider-item'),
+   dotsWrap = document.querySelector('.slider-dots'),
+   slider = document.querySelector('.bike__columb-slider'),
+   hover,
+   dots = document.querySelectorAll('.dot')
 
-function init() {
-   console.log('resize')
-   width = document.querySelector('.slider').offsetWidth
-   sliderLine.style.width = width * images.length + 'px'
-   images.forEach((item) => {
-      item.style.width = width + 'px'
-      item.style.height = 'auto'
+function howSlides(n) {
+   if (n > sliderItem.length) {
+      slideIndex = 1
+   }
+   if (n < 1) {
+      slideIndex = sliderItem.length
+   }
+   sliderItem.forEach((item) => {
+      item.style.display = 'none'
    })
-   rollSlider()
+   dots.forEach((item) => {
+      item.classList.remove('dot-active')
+   })
+   sliderItem[slideIndex - 1].style.display = 'block'
+   dots[slideIndex - 1].classList.add('dot-active')
 }
 
-init()
-window.addEventListener('resize', init)
+howSlides(slideIndex)
 
-document.querySelector('.slider-next').addEventListener('click', function () {
-   count++
-   if (count >= images.length) {
-      count = 0
-   }
-   rollSlider()
-})
-
-document.querySelector('.slider-prev').addEventListener('click', function () {
-   count--
-   if (count < 0) {
-      count = images.length - 1
-   }
-   rollSlider()
-})
-
-function rollSlider() {
-   sliderLine.style.transform = 'translate(-' + count * width + 'px)'
+function plusSlides(n) {
+   howSlides((slideIndex += n))
 }
+function currentSlide(n) {
+   howSlides((slideIndex = n))
+}
+
+dotsWrap.addEventListener('click', (e) => {
+   for (let i = 0; i < dots.length + 1; i++) {
+      if (e.target.classList.contains('dot') && e.target == dots[i - 1]) {
+         currentSlide(i)
+      }
+   }
+})
+slider.addEventListener('mouseover', () => {
+   hover = 0
+})
+slider.addEventListener('mouseout', () => {
+   hover = 1
+})
+
+// setInterval(() => {
+//    hover && plusSlides(1)
+// }, 5000)

@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import 'header';
-@import 'main';
-@import 'slider';
 
 $BASE_FONT_SIZE: 16px;
 
@@ -18,3 +15,6 @@ body {
    font-size: 0.875rem;
    color: #131313;
 }
+@import 'header';
+@import 'main';
+@import 'slider';
