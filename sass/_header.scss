@@ -2,27 +2,40 @@
    &__inner {
       display: flex;
       justify-content: space-between;
+      align-items: center;
    }
 
    &__logo {
    }
 
    &__menu {
+      margin-right: 70px;
    }
 }
 .container {
-   max-width: 1200px;
+   max-width: 1220px;
    margin: 0 auto;
+   padding: 0 10px;
 }
 .menu {
    &__list {
       display: flex;
-      gap: 50px;
+      gap: 3.125rem;
    }
 
    &__item {
    }
-
    &__link {
+      font-weight: 400;
+      font-size: inherit;
+      line-height: 1.0625rem;
+      text-transform: uppercase;
+      color: #131313;
+      padding: 40px 20px;
+      transition: all 0.3s ease;
+      &:hover {
+         background-color: #131313;
+         color: #fff;
+      }
    }
 }
