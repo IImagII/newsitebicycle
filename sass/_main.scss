@@ -48,13 +48,11 @@
       padding: 28px 81px;
    }
 
-   &__slider {
-   }
-
    &__list {
       display: flex;
-      gap: 66px;
-      margin: 0 65px;
+      gap: 5s6px;
+
+      justify-content: space-around;
    }
 
    &__list-item {
@@ -62,16 +60,28 @@
       font-size: 14px;
       line-height: 17px;
       text-transform: uppercase;
-      color: #131313;
-      display: flex;
-      flex-direction: column;
-
-      span {
-         font-weight: 400;
-         font-size: 12px;
-         line-height: 15px;
-         text-transform: lowercase;
-         color: #131313;
-      }
+      color: inherit;
+      max-width: 160px;
+      text-align: center;
+   }
+   &__span-small {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: lowercase;
+      color: inherit;
+      display: block;
+      margin-top: 13px;
+      text-align: center;
+   }
+   &__span-many {
+      margin-top: 5px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: lowercase;
+      color: inherit;
+      display: block;
+      text-align: center;
    }
 }

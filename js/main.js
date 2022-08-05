@@ -46,6 +46,6 @@ slider.addEventListener('mouseout', () => {
    hover = 1
 })
 
-// setInterval(() => {
-//    hover && plusSlides(1)
-// }, 5000)
+setInterval(() => {
+   hover && plusSlides(1)
+}, 5000)

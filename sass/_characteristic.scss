@@ -1,0 +1,51 @@
+.characteristic {
+   padding-bottom: 150px;
+   &__title-name {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+   }
+   &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #131313;
+   }
+
+   &__inner {
+      display: flex;
+   }
+
+   &__items {
+   }
+
+   &__list {
+   }
+
+   &__line {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__name {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+   }
+
+   &__desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+   }
+
+   &__img {
+      margin-left: 60px;
+   }
+}
+.container {
+}
