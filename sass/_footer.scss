@@ -1,0 +1,41 @@
+.footer {
+   background: #131313;
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+   }
+
+   &__link {
+      font-size: 12px;
+      line-height: 15px;
+      color: #ffffff;
+   }
+
+   &__social {
+   }
+
+   &__social-link {
+      margin-right: 28px;
+   }
+
+   &__contacts {
+   }
+
+   &__contscts-link {
+      display: flex;
+      align-items: center;
+   }
+
+   &__contacs-img {
+      margin: 10px 10px 0px 0px;
+   }
+   span {
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: lowercase;
+      color: #ffffff;
+   }
+}

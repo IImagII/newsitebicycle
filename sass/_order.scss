@@ -1,0 +1,135 @@
+.order {
+   padding-bottom: 100px;
+   &__inner {
+      position: relative;
+   }
+}
+.form {
+   max-width: 420px;
+   &__title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      margin-bottom: 41px;
+   }
+
+   &__text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      max-width: 300px;
+      margin-bottom: 30px;
+   }
+
+   &__input-name {
+      border-bottom: 1px solid #131313;
+      width: 100%;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      &::placeholder {
+         color: #6f6f6f;
+         opacity: 0.5;
+         line-height: 120%;
+      }
+   }
+
+   &__input-phone {
+      border-bottom: 1px solid #131313;
+      width: 100%;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      &::placeholder {
+         color: #6f6f6f;
+         opacity: 0.5;
+      }
+   }
+
+   &__text-choise {
+      line-height: 120%;
+      color: #6f6f6f;
+      opacity: 0.5;
+      margin-bottom: 10px;
+   }
+
+   &__label-box {
+      display: flex;
+   }
+
+   &__input-radio {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      &:checked + .form__bike {
+         display: block;
+      }
+   }
+
+   &__bike {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+
+   &__bike-price {
+      font-size: 32px;
+      color: #131313;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      right: 0;
+      width: 220px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid red;
+      border-radius: 60%;
+      transform: translateX(-50%);
+      &:after {
+         content: '';
+         border: 1px solid red;
+         border-radius: 60%;
+         position: absolute;
+         width: 220px;
+         height: 100px;
+         top: 12px;
+         left: 0;
+      }
+   }
+
+   &__radio-style {
+      border-radius: 30px;
+      width: 80px;
+      height: 12px;
+      margin-right: 23px;
+      margin-bottom: 50px;
+   }
+
+   &__radio-style--black {
+      background: #6f6f6f;
+   }
+
+   &__radio-style--white {
+      background: #ffffff;
+      border: 1px solid #6f6f6f;
+   }
+
+   &__radio-style--red {
+      background: #ff4040;
+   }
+
+   &__btn {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 1.1em;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #131313;
+      padding: 28px 60px 28px 81px;
+   }
+}
